@@ -8,7 +8,7 @@ const wishesContent = document.getElementById("wishesContent");
 const whoWish = document.getElementById("whoWish");
 
 //
-const imageArray = ["01_image", "02_image", "03_image"];
+const imageArray = ["01image", "02image", "03image"];
 const i = 1;
 let n = 0;
 const wishes = {
@@ -23,14 +23,14 @@ const wishes = {
 click.addEventListener("click", () => {
   startButtonSpace.style.display = "none";
   imageContainer.style.display = "flex";
-  imageContainer.style.backgroundImage = `url(../images/${imageArray[n]}.jpg)`;
+  imageContainer.style.backgroundImage = `url(./images/${imageArray[n]}.jpg)`;
   wishesContent.textContent = wishes[0];
 });
 
 nextButton.addEventListener("click", () => {
   n = n + i;
   if (n <= 2) {
-    imageContainer.style.backgroundImage = `url(../images/${imageArray[n]}.jpg)`;
+    imageContainer.style.backgroundImage = `url(./images/${imageArray[n]}.jpg)`;
     if (n === 1) {
       wishesContent.textContent = wishes[1];
     } else if (n === 2) {
