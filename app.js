@@ -12,7 +12,7 @@ const imageArray = ["01_image", "02_image", "03_image"];
 const i = 1;
 let n = 0;
 const wishes = {
-  0: "\xa0\xa0\xa0\xa0Z okazji urodzin chcieli byśmy życzyć wszustkiego njalepszego",
+  0: "\xa0\xa0\xa0\xa0Z okazji urodzin chcieli byśmy życzyć wszystkiego njalepszego",
   1: "\xa0\xa0\xa0\xa0Duzo zdrowia, pieniedzy i spełnienia marzeń",
   2: "\xa0\xa0\xa0\xa0Chociaz przede wszystkim, żeby każdy kolejny dzień sprawiał wiecej radości niż poprzedni",
   3: "Życzą Ania i Jarek",
