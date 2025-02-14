@@ -19,6 +19,13 @@ const wishes = {
   3: "\xa0\xa0\xa0\xa0\xa0Życzą Ania i Jarek",
   4: "\xa0\xa0\xa0\xa0Kochana Mamo.",
 };
+//
+const colorClickFunction = () => {
+  nextButton.style.backgroundColor = "white";
+  setInterval(() => {
+    nextButton.style.backgroundColor = "rgba(0, 0, 0, 0.137)";
+  }, 200);
+};
 
 //
 
@@ -51,5 +58,5 @@ nextButton.addEventListener("click", () => {
     nextButton.textContent = "dalej >>";
     wishesTag.style.display = "block";
   }
-  console.log(n);
+  colorClickFunction();
 });
