@@ -14,7 +14,7 @@ const i = 1;
 let n = 0;
 const wishes = {
   0: "\xa0\xa0\xa0\xa0W dniu Twojego Święta życzymy Ci wszystkiego Najlepszego",
-  1: "\xa0\xa0\xa0\xa0Dużo zdrowia, szczęścia i miłości. Żebyś zawsze była uśmiechnięta, szczęśliwa oraz żebyś odnalazła to czego szukasz",
+  1: "\xa0\xa0\xa0\xa0Dużo zdrowia, szczęścia i miłości. Żebyś zawsze była uśmiechnięta, pogodna oraz żebyś odnalazła to czego szukasz",
   2: "\xa0\xa0\xa0\xa0Chociaz przede wszystkim, żeby każdy kolejny dzień sprawiał wiecej radości niż poprzedni",
   3: "\xa0\xa0\xa0\xa0\xa0Życzą Ania i Jarek",
   4: "\xa0\xa0\xa0\xa0Kochana Mamo.",
