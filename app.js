@@ -6,16 +6,18 @@ const imageContainer = document.getElementById("imageContainer");
 const nextButton = document.getElementById("nextButton");
 const wishesContent = document.getElementById("wishesContent");
 const whoWish = document.getElementById("whoWish");
+const wishesTag = document.getElementById("wishesTag");
 
 //
 const imageArray = ["01image", "02image", "03image"];
 const i = 1;
 let n = 0;
 const wishes = {
-  0: "\xa0\xa0\xa0\xa0Z okazji urodzin chcieli byśmy życzyć wszystkiego njalepszego",
-  1: "\xa0\xa0\xa0\xa0Duzo zdrowia, pieniedzy i spełnienia marzeń",
+  0: "\xa0\xa0\xa0\xa0W dniu Twojego Święta życzymy Ci wszystkiego Najlepszego",
+  1: "\xa0\xa0\xa0\xa0Dużo zdrowia szczęścia, miłości i żebyś odnalazła to czego szukasz. Cokolwiek to jest",
   2: "\xa0\xa0\xa0\xa0Chociaz przede wszystkim, żeby każdy kolejny dzień sprawiał wiecej radości niż poprzedni",
-  3: "Życzą Ania i Jarek",
+  3: "\xa0\xa0\xa0\xa0\xa0Życzą Ania i Jarek",
+  4: "\xa0\xa0\xa0\xa0Kochana Mamo.",
 };
 
 //
@@ -25,11 +27,13 @@ click.addEventListener("click", () => {
   imageContainer.style.display = "flex";
   imageContainer.style.backgroundImage = `url(./images/${imageArray[n]}.jpg)`;
   wishesContent.textContent = wishes[0];
+  wishesTag.textContent = wishes[4];
 });
 
 nextButton.addEventListener("click", () => {
   n = n + i;
   if (n <= 2) {
+    wishesTag.style.display = "none";
     imageContainer.style.backgroundImage = `url(./images/${imageArray[n]}.jpg)`;
     if (n === 1) {
       wishesContent.textContent = wishes[1];
@@ -45,6 +49,7 @@ nextButton.addEventListener("click", () => {
     wishesContent.textContent = "";
     whoWish.textContent = "";
     nextButton.textContent = "dalej >>";
+    wishesTag.style.display = "block";
   }
   console.log(n);
 });
